@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Game Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Animated neon background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('https://i.ibb.co/Y3Rz4X1/retro-game-bg.gif') center/cover no-repeat;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    color: #00FFF7;
+    text-shadow: 0 0 10px #00FFF7, 0 0 20px #FF00FF;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #A1A1AA;
+}
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-card {
+    background-color: rgba(31,41,55,0.95);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00FFF7;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #FF00FF, 0 0 40px #00FFF7;
+}
+
+.game-card h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 10px 0;
+    color: #FF00FF;
+    text-shadow: 0 0 5px #FF00FF;
+}
+
+.game-card iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6B7280;
+    font-size: 0.9rem;
+}
+
+@media(max-width:600px){
+    header h1 { font-size: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Pro Game Hub</h1>
+    <p>15 Fully Playable HTML5 Games Hosted Directly</p>
+</header>
+
+<div class="games-container">
+    <div class="game-card">
+        <h3>1. Snake Game</h3>
+        <iframe src="games/snake/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>2. Flappy Bird</h3>
+        <iframe src="games/flappy/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>3. Breakout</h3>
+        <iframe src="games/breakout/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>4. Platform Jumper</h3>
+        <iframe src="games/platformer/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>5. Pong Game</h3>
+        <iframe src="games/pong/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>6. Memory Match</h3>
+        <iframe src="games/memory/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>7. Ball Bounce</h3>
+        <iframe src="games/ballbounce/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>8. Maze Runner</h3>
+        <iframe src="games/maze/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>9. Balloon Pop</h3>
+        <iframe src="games/balloon/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>10. Car Racing</h3>
+        <iframe src="games/car-racing/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>11. Space Shooter</h3>
+        <iframe src="games/shooter/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>12. Jumping Ninja</h3>
+        <iframe src="games/ninja/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>13. Tower Defense</h3>
+        <iframe src="games/tower-defense/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>14. Tic Tac Toe</h3>
+        <iframe src="games/tictactoe/index.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>15. Connect Four</h3>
+        <iframe src="games/connect4/index.html" allowfullscreen></iframe>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Pro Game Hub. All rights reserved.
+</footer>
+
+</body>
+</html>
